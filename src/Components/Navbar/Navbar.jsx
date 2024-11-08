@@ -49,6 +49,11 @@ export default function Navbar() {
                       Categories
                     </NavLink>
                   </li>
+                  <li>
+                    <NavLink to={"cart"} className="nav-link" >
+                      Cart
+                    </NavLink>
+                  </li>
                 </>
               ) : null}
             </ul>
@@ -64,15 +69,11 @@ export default function Navbar() {
                   </NavLink>
                 </>
               ) : (
-                <div className=" d-flex me-5 justify-content-between ">
-                <button className="btn nav-link" onClick={logout}>
-                  Logout{" "}
-                </button>
-                <NavLink to={'cart'} className="btn mt-1  nav-link fa fa-cart-shopping" onClick={''}>
-
-                </NavLink>
+                <div className=" d-flex  justify-content-between ">
+                  <button className="btn nav-link" onClick={logout}>
+                    Logout
+                  </button>
                 </div>
-
               )}
               <li className="py-2 m-1 d-flex ">
                 <i className="fab me-2 fa-facebook"></i>

@@ -60,7 +60,7 @@ useEffect(()=>{
 ,[cart])
   return (
     <>
-      <div className="col-md-8 mx-auto">
+      <div className="col-md-8 ">
         <div className=" border-success border-2 border my-3 rounded  p-2 d-flex">
           <div className=" col-md-4">
             <img

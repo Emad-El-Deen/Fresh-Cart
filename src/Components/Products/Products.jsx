@@ -5,6 +5,7 @@ import axios from "axios";
 import { Link, NavLink } from "react-router-dom";
 import LoadingScreen from "./../LoadingScreen/LoadingScreen";
 import { cart } from "../../CartServices";
+import { Helmet } from "react-helmet";
 
 export default function Products() {
   const [products, setProducts] = useState([]);
@@ -23,6 +24,9 @@ export default function Products() {
   }, []);
   return (
     <>
+    <Helmet>
+      <title>Products</title>
+    </Helmet>
       {isLoading ? (
         <LoadingScreen />
       ) : (
